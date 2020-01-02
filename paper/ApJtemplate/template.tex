@@ -1,0 +1,197 @@
+\input{top-apj}
+\usepackage{subfiles}
+\usepackage{subfig}
+% Headers for odd and even pages, respectively:
+\shorttitle{ApJ Template}
+% If more than two authors, use {\em et al.}
+\shortauthors{Shiwu {\em et al.}}
+
+
+\begin{document}
+
+\title{Extreme outflow of Enormous Ly$\alpha$ Nebula in MAMMOTH-1}
+
+
+%% AUTHOR/INSTITUTIONS FOR AASTEX6.1:
+\author{Shiwu Zhang}
+\affiliation{Department of Astronomy, Tsinghua University,
+              Shuangqing Road No.30, Haidian Beijing China}
+
+\author{Zheng Cai}
+\affiliation{Department of Astronomy, Tsinghua University,
+              Shuangqing Road No.30, Haidian Beijing China}
+%% AUTHOR/INSTITUTIONS FOR EMULATE APJ:
+% \author{Patricio~E.~Cubillos\altaffilmark{1,2},
+% Joseph~Harrington\altaffilmark{1},
+% and
+% Third~Author\altaffilmark{1}
+% }
+% \affil{\sp{1} Planetary Sciences Group, Department of
+%               Physics, University of Central Florida, Orlando, FL 32816-2385\\
+%        \sp{2} Space Research Institute, Austrian Academy of Sciences,
+%               Schmiedlstrasse 6, A-8042, Graz, Austria}
+
+\email{zsw18@mails.tsinghua.edu.cn}
+
+% %% Extra info for aastex:
+% \received{Yesterday}
+% \revised{Today}
+% \accepted{Tonight}
+% \published{Tomorrow}
+% \submitjournal{AASJournal}
+
+\begin{abstract}
+  
+\end{abstract}
+
+% http://journals.aas.org/authors/keywords2013.html
+\keywords{}
+
+
+\section{Introduction}
+\label{introduction}
+
+\subfile{sections/Introductions}
+
+\section{Observations}
+\label{sec:observations}
+
+\subfile{sections/Observations}
+%We observed exoplanets, many of them.  Sometimes we deal with theory,
+%but most of the time we reduce data.
+%
+%This text shows how to cite other people's papers.
+%\citet{HarringtonEtal2006sciuandbphas} is a citation to a paper.
+%Citations can also be in parenthesis
+%\citep[e.g.,][]{HarringtonEtal2007natHD149026b}.  Multiple papers can
+%be cited in one go \citep{StevensonEtal2010natGJ436b,
+%  StevensonEtal2012apjHD149026b, StevensonEtal2012apjGJ436c,
+%  BlecicEtal2013apjWASP14b, BlecicEtal2014apjWASP43b,
+%  CubillosEtal2013apjWASP8b, CubillosEtal2014apjTrES1,
+%  CampoEtal2011apjWASP12b, NymeyerEtal2011apjWASP18b}.
+%
+%The references information is kept in bibtex format.  Bibtex entries
+%are generally obtained from
+%\href{http://adsabs.harvard.edu/abstract_service.html}{ADS}, and
+%should be stored in a bibfile (see `bibfile-template.bib').
+
+
+\section{Results}
+\label{sec:results}
+
+\subfile{sections/Results}
+
+
+\section{Discussion}
+\label{sec:discussion}
+\subfile{sections/Discussion.tex}
+
+
+
+\section{Conclusions}
+\label{sec:conclusions}
+\subfile{sections/Conclusions}
+
+\acknowledgments
+
+
+\bibliography{template}
+
+
+
+\end{document}
+
+
+
+%This section gives a scientific interpretation of the analyzed data.
+%The \texttt{'\textbackslash micro'} macross provides the unslanted mu,
+%`{\micro}' to be used for units of values, for example: {\micron} or
+%{\microbar}.  Another nice feature are \texttt{'\$\textbackslash
+%  ttt\{n\}\$'} for a 'ten-to-the-n' ($\ttt{n}$) and
+%\texttt{'\$\textbackslash tttt\{n\}\$'} for 'times-ten-to-the-n'
+%($\tttt{n}$).
+%
+%Table \ref{table:parameters} is a table.  Tables are well behaved;
+%most of the time they appear right (or close to) where you put them.
+%Figures are not.  The can show up anywhere in the pdf.   Be patient.
+%
+%\begin{table}[ht]
+%\centering
+%\caption{\label{table:parameters} Light curve parameters}
+%\begin{tabular}{lc}
+%\hline
+%\hline
+%Parameter                           & Value           \\
+%\hline
+%Eclipse depth (counts)              & 98.1            \\
+%Eclipse duration (phase)            & 0.1119          \\
+%Eclipse mid point (phase)           & 0.5015          \\
+%Eclipse ingress/egress time (phase) & 0.013           \\
+%Ramp slope (counts/phase)           & 0.006           \\
+%System flux (counts)                & 25815           \\
+%\hline
+%% SOURCE: /home/patricio/ast/esp01/analyses/ligtcurve/attempt_547/results.txt
+%\end{tabular}
+%\end{table}
+%
+%
+%Deluxe tables, like Table \ref{table:allplanets} are great. If they
+%are too long, they automatically split and continue in the next
+%page. Everything looks fine in Aastex6; however, in emulateapj the
+%format seems to fail.
+%Deluxe table may be a bit tricky. If you surround it with the table
+%environment, you can specify where to place them (e.g., top, bottom).
+%However, if you do, long tables wont automatically break into separate
+%pages.  So, there is a trade off.
+%
+%%\begin{table}[t]
+%% deluxetable works well for aastex6, not so much for emulateapj:
+%\begin{deluxetable*}{lr@{}lr@{}lrrccrrrccrr}
+%\tabletypesize{\footnotesize}
+%%\tablecolumns{14}
+%%\tablewidth{\textwidth}
+%\tablecaption{Planets \label{table:allplanets}}
+%
+%\tablehead{\colhead{Name}                          &
+%           \multicolumn{2}{c}{Mass}                &
+%           \multicolumn{2}{c}{Radius}              &
+%           \colhead{\Teq}                          &
+%           \colhead{$\Omega$}                      &
+%           \colhead{$a$}                           &
+%           \colhead{$M$\sb{s}}                     &
+%           \colhead{Age}                           &
+%           \colhead{$\Omega\sb{\rm rot}$}          &
+%           \colhead{Flux}                          &
+%           \colhead{$L\sb{\rm h}$}                 &
+%           \colhead{$L\sb{\rm e}$}                 &
+%           \colhead{$L\sb{\rm h}$/$L\sb{\rm e}$}   &
+%           \colhead{Ref.\,\tnm{a}}                 \\
+%           \colhead{}                              &
+%           \multicolumn{2}{c}{\mearth}             &
+%           \multicolumn{2}{c}{\rearth}             &
+%           \colhead{}                              &
+%           \colhead{}                              &
+%           \colhead{}                              &
+%           \colhead{\msun}                         &
+%           \colhead{}                              &
+%           \colhead{$\Omega\sb{\odot}$}            &
+%           \colhead{erg\,s$\sp{-1}$\,cm$\sp{-2}$}  &
+%           \colhead{s$\sp{-1}$}                    &
+%           \colhead{s$\sp{-1}$}                    &
+%            \colhead{}                              }
+%\startdata
+%55 Cnc e      & $ 8.38$ & $\pm 0.39$               & $ 2.08$ & $\pm 0.16$             &         1957 &       15.6 & $0.015$ & $0.91$ & $  10.2$ & $1.4$ & $142697.6$ & $3\times10^{30}$ & $3\times10^{30}$ & $\cdots$ & De11 \\
+%55 Cnc e      & $ 8.38$ & $\pm 0.39$               & $ 2.08$ & $\pm 0.16$             &         1957 &       15.6 & $0.015$ & $0.91$ & $  10.2$ & $1.4$ & $142697.6$ & $\cdots$ & $\cdots$ & $\cdots$ & De11 \\
+%55 Cnc e      & $ 8.38$ & $\pm 0.39$               & $ 2.08$ & $\pm 0.16$             &         1957 &       15.6 & $0.015$ & $0.91$ & $  10.2$ & $1.4$ & $142697.6$ & $\cdots$ & $\cdots$ & $\cdots$ & De11 \\
+%55 Cnc e      & $ 8.38$ & $\pm 0.39$               & $ 2.08$ & $\pm 0.16$             &         1957 &       15.6 & $0.015$ & $0.91$ & $  10.2$ & $1.4$ & $142697.6$ & $\cdots$ & $\cdots$ & $\cdots$ & De11 \\
+%\enddata
+%% The minipage environment keeps the table footer within the page
+%% width when the table occupies the full width.
+%% Use \vspace to adjust latex quirks with the vertical spacing.
+%%\begin{minipage}{\textwidth}%\vspace{0.4cm}
+%\tablenotetext{a}{
+%Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+%}
+%%\end{minipage}
+%\end{deluxetable*}
+%%\end{table}

@@ -1,0 +1,62 @@
+\begin{thebibliography}{12}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\ifx\adsurl \undefined \def\adsurl#1{\href{#1}{ADS}}\fi
+\ifx\eprint \undefined \def\eprint#1{\href{http://arxiv.org/abs/#1}{#1}}\fi
+
+\bibitem[{Arrigoni~Battaia {et~al.}(2018)Arrigoni~Battaia, Hennawi, Prochaska,
+  O{\~n}orbe, Farina, Cantalupo, \& Lusso}]{arrigoni2018qso}
+Arrigoni~Battaia, F., Hennawi, J.~F., Prochaska, J.~X., O{\~n}orbe, J., Farina,
+  E.~P., Cantalupo, S., \& Lusso, E. 2018, Monthly Notices of the Royal
+  Astronomical Society, 482, 3162
+
+\bibitem[{Cai {et~al.}(2017)Cai, Fan, Yang, Bian, Prochaska, Zabludoff,
+  McGreer, Zheng, Green, Cantalupo, {et~al.}}]{cai2017discovery}
+Cai, Z. {et~al.} 2017, The Astrophysical Journal, 837, 71
+
+\bibitem[{Emonts {et~al.}(2019)Emonts, Cai, Prochaska, Li, \&
+  Lehnert}]{emonts2019cold}
+Emonts, B.~H., Cai, Z., Prochaska, J.~X., Li, Q., \& Lehnert, M.~D. 2019, The
+  Astrophysical Journal, 887, 86
+
+\bibitem[{Harrison {et~al.}(2014)Harrison, Alexander, Mullaney, \&
+  Swinbank}]{harrison2014kiloparsec}
+Harrison, C., Alexander, D., Mullaney, J., \& Swinbank, A. 2014, Monthly
+  Notices of the Royal Astronomical Society, 441, 3306
+
+\bibitem[{Heckman {et~al.}(1990)Heckman, Armus, Miley,
+  {et~al.}}]{heckman1990nature}
+Heckman, T.~M., Armus, L., Miley, G.~K., {et~al.} 1990, Astrophysical Journal
+  Supplement Series, 74, 833
+
+\bibitem[{Kennicutt~Jr(1998)}]{kennicutt1998star}
+Kennicutt~Jr, R.~C. 1998, Annual Review of Astronomy and Astrophysics, 36, 189
+
+\bibitem[{Rodrguez~Zaurn {et~al.}(2013)Rodrguez~Zaurn, Tadhunter, Rose, \&
+  Holt}]{rodriguez2013importance}
+Rodrguez~Zaurn, J., Tadhunter, C., Rose, M., \& Holt, J. 2013, Monthly Notices
+  of the Royal Astronomical Society, 432, 138
+
+\bibitem[{Shankar {et~al.}(2006)Shankar, Lapi, Salucci, De~Zotti, \&
+  Danese}]{shankar2006new}
+Shankar, F., Lapi, A., Salucci, P., De~Zotti, G., \& Danese, L. 2006, The
+  Astrophysical Journal, 643, 14
+
+\bibitem[{Storey \& Hummer(1995)}]{storey1995recombination}
+Storey, P., \& Hummer, D. 1995, Monthly Notices of the Royal Astronomical
+  Society, 272, 41
+
+\bibitem[{Tombesi {et~al.}(2013)Tombesi, Cappi, Reeves, Nemmen, Braito,
+  Gaspari, \& Reynolds}]{tombesi2013unification}
+Tombesi, F., Cappi, M., Reeves, J., Nemmen, R., Braito, V., Gaspari, M., \&
+  Reynolds, C. 2013, Monthly Notices of the Royal Astronomical Society, 430,
+  1102
+
+\bibitem[{Treister {et~al.}(2010)Treister, Natarajan, Sanders, Urry,
+  Schawinski, \& Kartaltepe}]{treister2010major}
+Treister, E., Natarajan, P., Sanders, D.~B., Urry, C.~M., Schawinski, K., \&
+  Kartaltepe, J. 2010, Science, 328, 600
+
+\bibitem[{Zubovas(2018)}]{zubovas2018agn}
+Zubovas, K. 2018, Monthly Notices of the Royal Astronomical Society, 479, 3189
+
+\end{thebibliography}
