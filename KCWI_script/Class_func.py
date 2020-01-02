@@ -3,7 +3,7 @@
 # @Time      :   2019/12/10 9:45 PM
 # @Author    :   Shiwu
 # @Site      :
-# @File      :   Map.py
+# @File      :   Class_func.py
 # @Desc      :
 # @Software  :   PyCharm
 # @license   :   Copyright(C), C
