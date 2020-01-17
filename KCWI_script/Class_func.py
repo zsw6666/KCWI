@@ -3,7 +3,7 @@
 # @Time      :   2019/12/10 9:45 PM
 # @Author    :   Shiwu
 # @Site      :
-# @File      :   Class_func.py
+# @File      :   Map.py
 # @Desc      :
 # @Software  :   PyCharm
 # @license   :   Copyright(C), C
@@ -23,48 +23,28 @@ Class:
 
 
 import numpy as np
+import matplotlib.pyplot as plt
 from astropy import units as u
 from astropy.convolution import convolve,Gaussian2DKernel
 from spectral_cube import SpectralCube
 from scipy import ndimage
 
-
-
 class Cube(SpectralCube):
 
     def __init__(self,refpoint=[0*u.deg,0*u.deg],slices=None,
                  optimal_img=None,continuum=None,**krg):
-        super().__init__(**krg)
+        '''
+        初始化cube实例
+        '''
+        super().__init__(**krg)#因为继承自SpectralCube,这句是初始化父类
         self.refpoint=refpoint
         self.dec = np.mean(self.spatial_coordinate_map[0] - self.refpoint[1], axis=0)
         self.ra = np.mean(self.spatial_coordinate_map[1] - self.refpoint[0], axis=1)
+
+        #以下3个属性只有在调用了对应方法后才有实际值，一般情况下是None
         self.continuum=continuum
         self.slices=slices
         self.optimal_img=optimal_img
-
-    def emissionline_subcube(self,mean_std):
-        '''
-        extract the best subcube which fully include the
-        emission line but doesn't have continuum component.
-        Idea is simple, calculate standard deviation of each
-        slice, if there's emission line, standard deviation would
-        be large than other slices.
-        '''
-
-        #select slices with emission line component
-        slices_std=self.noise()
-        slices_bool=(slices_std>mean_std)
-        presubcube_axis = self.spectral_axis[slices_bool]
-
-        #choose the longest consecutive array and define it
-        #as the emission-line interval
-        step_size=(self.spectral_axis[1]-self.spectral_axis[0])
-        consecutive_arr=np.split(presubcube_axis,np.where(np.diff(presubcube_axis)>1.5*step_size)[0]+1)
-        consecutive_arr_size=np.array([len(i) for i in consecutive_arr])
-        longest_arr=consecutive_arr[np.where(consecutive_arr_size==consecutive_arr_size.max())[0][0]]
-
-        emissionline_cube=self.subcube(zlo=longest_arr[0],zhi=longest_arr[-1])
-        return emissionline_cube
 
     def estimate_continuum(self):
         '''
@@ -76,7 +56,7 @@ class Cube(SpectralCube):
 
         return None
 
-    def mask_generate(self,noise,step=5):
+    def mask_generate(self,noise,step=2):
         '''
         generate spatial and spectral mask to
         extract the signal beyond noise*noise_level
@@ -113,7 +93,8 @@ class Cube(SpectralCube):
         optimal_datacube=self.hdu.data*maskcube
         mask=np.sum(maskcube,axis=0)
         mask[mask==0]=1.
-        self.optimal_img=np.sum(optimal_datacube,axis=0)/mask
+        optimal_img=optimal_datacube.sum(axis=0)
+        self.optimal_img=optimal_img/mask
         optimalcube=Cube(data=optimal_datacube,wcs=self.wcs,
                          refpoint=self.refpoint)
         optimalcube.optimal_img=self.optimal_img
@@ -133,7 +114,7 @@ class Cube(SpectralCube):
             noise[i]=std
         return noise
 
-    @classmethod
+    @classmethod#类方法
     def read(cls,filename,**krg):
         '''
         class function, read the datacube from .fits
@@ -164,18 +145,6 @@ class Cube(SpectralCube):
         self.slices=(IMG,SLICE_loc)
         return None
 
-    def substract_continuum(self,continuum_img):
-        '''
-        subtract continuum component from self.
-        continuum_img should have the same spatial
-        shape like self
-        '''
-        continuum_img=continuum_img.reshape(1,continuum_img.shape[0],
-                                            continuum_img.shape[1])
-        continuum_sub=self-continuum_img
-
-        return continuum_sub
-
     def snrmap(self,noise,maskcube):
         '''
         Calculate the SNR map for
@@ -199,7 +168,8 @@ class Cube(SpectralCube):
 class Map:
 
     def __init__(self,filename,refpoint,
-                 dataedge,continuumedge,noiseedge,noiselevel):
+                 dataedge,continuumedge,
+                 noiseedge,noiselevel):
 
         self.cube=Cube.read(filename,refpoint=refpoint)
         self.refpoint=refpoint
@@ -210,9 +180,7 @@ class Map:
 
     def _basecube_generate(self):
         '''
-        This function is the inner function
-        which generate three base cubes(datacube,
-        noisecube and continuumcube) for map
+        利用Map.py传入的3个边界值，产生对应的3种cube。
         '''
 
         datacube=self.cube.subcube(refpoint=self.refpoint,**self.dataedge)
@@ -222,16 +190,32 @@ class Map:
 
         return datacube,noisecube,continuumcube
 
+    def _smooth_cube(self,datacube,*args):
+        '''
+        对cube中的每一个slice做smooth
+        '''
+        for i in range(datacube.shape[0]):
+            datacube[i]=self.smooth(datacube[i],*args)
+
+        return datacube
+
     def optimalmap(self):
         '''
         generate the best extracted psudo-nb image
         '''
-        datacube,noisecube,continuumcube=self._basecube_generate()
-        emissioncube = datacube.emissionline_subcube(noisecube.noise().mean()*self.noiselevel['emission'])
+
+        #产生必须的3种cube
+        emissioncube,noisecube,continuumcube=self._basecube_generate()
+        #continuumcube调用方法算continuum image并把它赋值给continuumcube.continuum(详见estimate_continuum方法)
         continuumcube.estimate_continuum()
-        maskcube=emissioncube.mask_generate(self.noiselevel['mask']*noisecube.noise().mean())
+        #emission cube中的每一个slice都减去continuum image并对去除continuum的emission cube做smooth
+        emissioncube._data=emissioncube._data-continuumcube.continuum.value
+        emissioncube._data=self._smooth_cube(emissioncube._data,1,3,3,3)
+
+        #利用noise cube产生mask cube并计算 optimal cube
+        maskcube = emissioncube.mask_generate(self.noiselevel * noisecube.noise().mean())
         optimalcube=emissioncube.max_emission_extraction(maskcube)
-        optimalcube.optimal_img=optimalcube.optimal_img+noisecube.noise().mean()*0.7-continuumcube.continuum
+        optimalcube.optimal_img=optimalcube.optimal_img+noisecube.noise().mean()*0.7
         return optimalcube,noisecube,maskcube,emissioncube
 
     def snrmap(self):
@@ -242,6 +226,14 @@ class Map:
         optimalcube,noisecube,maskcube,_=self.optimalmap()
         snrmap = optimalcube.snrmap(noisecube.noise().mean(), maskcube)
         return snrmap
+
+    def smooth(self,img,x_stddev,y_stddev,x_size,y_size):
+
+        kernel=Gaussian2DKernel(x_stddev=x_stddev,y_stddev=y_stddev,
+                                x_size=x_size,y_size=y_size)
+        img_smooth=convolve(img,kernel)
+
+        return img_smooth
 
     def momentmap(self,order,redshift,restvalue):
         '''
@@ -266,9 +258,7 @@ def Img_interpsmooth(img,x,y,n_inter):
     Meanwhile, interpolate x, y
     '''
 
-    kernel=Gaussian2DKernel(x_stddev=1,y_stddev=1,x_size=1,y_size=3)
-    img_smooth=convolve(img,kernel)
-    img_smooth_inter=ndimage.zoom(img_smooth,n_inter)
+    img_smooth_inter=ndimage.zoom(img,n_inter)
     x_inter=ndimage.zoom(x,n_inter[0])
     y_inter=ndimage.zoom(y,n_inter[1])
 

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ed044d2-eccd-4821-9542-ee2ace7ff4f2" name="Default Changelist" comment="" />
+    <list default="true" id="1ed044d2-eccd-4821-9542-ee2ace7ff4f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/map_generator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/map_generator-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/mapplot-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/mapplot-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contour_generator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/contour_generator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contourplot.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/contourplot.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_generator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/map_generator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapplot.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/mapplot.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,45 +23,87 @@
     <session id="1689260560">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ipynb" value="3" />
-          <entry key="py" value="71" />
+          <entry key="ipynb" value="4" />
+          <entry key="py" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="3" />
-          <entry key="Python" value="71" />
+          <entry key="IPNB" value="4" />
+          <entry key="Python" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="21089" />
+          <entry key="Python Console" value="356" />
+          <entry key="py" value="25969" />
           <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="21089" />
+          <entry key="Python" value="26325" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Class_func.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
+              <folding>
+                <element signature="e#577#595#0" expanded="true" />
+                <element signature="e#816#5394#0" />
+                <element signature="e#939#1261#0" />
+                <element signature="e#1305#1485#0" />
+                <element signature="e#1537#2454#0" />
+                <element signature="e#2512#3003#0" />
+                <element signature="e#3034#3428#0" />
+                <element signature="e#3489#3679#0" />
+                <element signature="e#3724#4288#0" />
+                <element signature="e#4741#5074#0" />
+                <element signature="e#5214#5394#0" />
+                <element signature="e#5131#8202#0" />
+                <element signature="e#5805#6249#0" />
+                <element signature="e#5947#6061#0" />
+                <element signature="e#6454#7086#0" />
+                <element signature="e#8255#8622#0" />
+                <marker date="1579279121319" expanded="true" signature="7335:7539" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Map.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding>
+                <element signature="e#383#401#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>subcube</find>
       <find>getit</find>
       <find>class</find>
       <find>__class__</find>
@@ -74,10 +126,20 @@
       <find>Img_interpolate</find>
       <find>optimalmap</find>
       <find>mean</find>
+      <find>noise</find>
+      <find>subcube</find>
+      <find>rest_</find>
+      <find>moment</find>
+      <find>rest_value</find>
+      <find>ly_noiseedge</find>
+      <find>noiselevel</find>
+      <find>2.5</find>
     </findStrings>
     <replaceStrings>
       <replace>noiselevel</replace>
       <replace>Img_interpsmooth</replace>
+      <replace>3</replace>
+      <replace>2</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -102,11 +164,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1439" />
-    <option name="y" value="1024" />
-    <option name="width" value="1440" />
-    <option name="height" value="840" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="985" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -116,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Imgplot">
+  <component name="RunManager" selected="Python.Map">
     <configuration name="CIV" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KCWI_script" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,8 +322,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Imgplot" />
         <item itemvalue="Python.Map" />
+        <item itemvalue="Python.Imgplot" />
         <item itemvalue="Python.ImgPplot" />
         <item itemvalue="Python.CIV" />
         <item itemvalue="Python.HeII" />
@@ -283,22 +344,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1439" y="1024" width="1440" height="840" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="984" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10641297" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18565401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22911695" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3310153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22790055" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39364642" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.27157652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -307,8 +369,32 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Class_func.py</url>
+          <line>233</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>plt.imshow(emissioncube.hdu.data.mean(axis=0));plt.show()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>plt.imshow((emissioncube.hdu.data-continuumcube.continuum.value).mean(axis=0));plt.show()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>plt.plot(nebula_cube_subconti.spectral_axis.to(u.AA).value,nebula_cube_subconti.spatial_noise());plt.show()</expression-string>
         <language-id>Python</language-id>
@@ -326,47 +412,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>emissioncube.spectral_axis.to(u.AA)</expression-string>
+        <expression-string>plt.imshow(kernel._array);plt.show()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>emissioncube.spectral_axis</expression-string>
+        <expression-string>kernel._array</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>noisecube.noise().mean()</expression-string>
+        <expression-string>kernel</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>emissioncube.spectral_axis.to*(u.AA)</expression-string>
+        <expression-string>kernel.data</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(datacube.dec[1]-datacube.dec[0]).to(u.arcsec)</expression-string>
+        <expression-string>kernel.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(datacube.ra[1]-datacube.ra[0]).to(u.arcsec)</expression-string>
+        <expression-string>plt.imshow(mask);plt.show()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>datacube.ra.shape</expression-string>
+        <expression-string>plt.imshow(maskcube.sum(axis=0));plt.show()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>datacube.shape</expression-string>
+        <expression-string>plt.imshow(civoptimalcube.optimal_img);plt.show()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>datacube.ra</expression-string>
+        <expression-string>civoptimalcube.optimal_img[:10]=0</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -437,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/spectral_cube/spectral_cube.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="2904" selection-start-line="2904" selection-end-line="2904" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/WS/ASTRO/GCA/script/ACF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-87" />
@@ -486,27 +565,81 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ly.py" />
+    <entry file="file://$PROJECT_DIR$/Imgplot.py" />
     <entry file="file://$PROJECT_DIR$/map_generator.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="0" />
+          <selected id="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Imgplot.py" />
+    <entry file="file:///usr/local/lib/python3.7/site-packages/spectral_cube/io/fits.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="65" column="69" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/spectral_cube/io/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/spectral_cube/spectral_cube.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="2171" column="17" lean-forward="true" selection-start-line="2171" selection-start-column="17" selection-end-line="2171" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/astropy/io/fits/file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/astropy/units/function/units.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="276">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#383#401#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Class_func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="540">
+          <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
           <folding>
-            <element signature="e#784#6424#0" />
+            <element signature="e#577#595#0" expanded="true" />
+            <element signature="e#816#5394#0" />
+            <element signature="e#939#1261#0" />
+            <element signature="e#1305#1485#0" />
+            <element signature="e#1537#2454#0" />
+            <element signature="e#2512#3003#0" />
+            <element signature="e#3034#3428#0" />
+            <element signature="e#3489#3679#0" />
+            <element signature="e#3724#4288#0" />
+            <element signature="e#4741#5074#0" />
+            <element signature="e#5214#5394#0" />
+            <element signature="e#5131#8202#0" />
+            <element signature="e#5805#6249#0" />
+            <element signature="e#5947#6061#0" />
+            <element signature="e#6454#7086#0" />
+            <element signature="e#8255#8622#0" />
+            <marker date="1579279121319" expanded="true" signature="7335:7539" ph="..." />
           </folding>
         </state>
       </provider>
