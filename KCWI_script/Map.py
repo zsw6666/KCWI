@@ -31,7 +31,7 @@ civ_noiseedge={'xlo':10,'xhi':21,'ylo':30,'yhi':59,'zlo':5100*u.AA,'zhi':5150*u.
 civ_continuumedge={'xlo':10,'xhi':21,'ylo':30,'yhi':59,'zlo':5000*u.AA,'zhi':5100*u.AA}
 
 lymap=Map(filename='/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/1441+4003_comb_ss_icubes.fits',
-          refpoint=np.array([220.3520886,40.05269183])*u.deg,dataedge=ly_dataedge,
+          refpoint=np.array([220.3420886,40.05269183])*u.deg,dataedge=ly_dataedge,
           continuumedge=ly_continuumedge,noiseedge=ly_noiseedge,
           noiselevel={'emission':1,'mask':1.})
 
