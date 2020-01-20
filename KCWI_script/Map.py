@@ -35,6 +35,7 @@ velocity map, dispersion map。
 import numpy as np
 from astropy import units as u
 from Class_func import Map
+import matplotlib.pyplot as plt
 
 
 #定义每一种cube的边界
@@ -51,32 +52,38 @@ civ_continuumedge={'xlo':2,'xhi':22,'ylo':4,'yhi':65,'zlo':5000*u.AA,'zhi':5100*
 lymap=Map(filename='/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/1441+4003_comb_ss_icubes.fits',
           refpoint=np.array([220.3520886,40.05269183])*u.deg,dataedge=ly_dataedge,
           continuumedge=ly_continuumedge,noiseedge=ly_noiseedge,
-          noiselevel=.2)
+          noiselevel=1.8)
 
 heiimap=Map(filename='/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/1441+4003_comb_psfs_icubes.fits',
             refpoint=np.array([220.3520886, 40.05269183]) * u.deg,dataedge=heii_dataedge,
             continuumedge=heii_continuumedge,noiseedge=heii_noiseedge,
-            noiselevel=.2)
+            noiselevel=1)
 
 civmap=Map(filename='/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/1441+4003_comb_psfs_icubes.fits',
            refpoint=np.array([220.3520886, 40.05269183]) * u.deg,dataedge=civ_dataedge,
            continuumedge=civ_continuumedge,noiseedge=civ_continuumedge,
-           noiselevel=.2)
+           noiselevel=1.5)
 
 
 lyoptimalcube,lynoisecube,_,lyemissioncube=lymap.optimalmap()
 lysnrmap=lymap.snrmap()
+lysnrmap=lymap.img_cut(0.99,[2,-1,2,-1],lysnrmap)
 lyvelocitymap=lymap.momentmap(order=1,redshift=2.31,restvalue=1215.67*u.AA)
 lydispersionmap=lymap.momentmap(order=2,redshift=2.31,restvalue=1215.67*u.AA)
 
 
-heiioptimalcube,_,_,heiiemissioncube=heiimap.optimalmap()
+heiioptimalcube,_,_,heiiemissioncube=heiimap.optimalmap(smooth=False)
 heiisnrmap=heiimap.snrmap()
+heiisnrmap[heiisnrmap<3]=0
+heiisnrmap=heiimap.img_cut(0.95,[20,45,10,-1],heiisnrmap)
 heiivelocitymap=heiimap.momentmap(order=1,redshift=2.34,restvalue=1640*u.AA)
 heiidispersionmap=heiimap.momentmap(order=2,redshift=2.34,restvalue=1640*u.AA)
 
 
-civoptimalcube,_,_,civemissioncube=civmap.optimalmap()
+civoptimalcube,_,_,civemissioncube=civmap.optimalmap(smooth=False)
 civsnrmap=civmap.snrmap()
+civsnrmap[civsnrmap<3]=0
+civsnrmap=civmap.img_cut(0.95,[20,46,10,-2],civsnrmap)
 civvelocitymap=civmap.momentmap(order=1,redshift=2.34385,restvalue=1549*u.AA)
 civdispersionmap=civmap.momentmap(order=2,redshift=2.34385,restvalue=1549*u.AA)
+

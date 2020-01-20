@@ -199,7 +199,7 @@ class Map:
 
         return datacube
 
-    def optimalmap(self):
+    def optimalmap(self,smooth=False):
         '''
         generate the best extracted psudo-nb image
         '''
@@ -210,12 +210,16 @@ class Map:
         continuumcube.estimate_continuum()
         #emission cube中的每一个slice都减去continuum image并对去除continuum的emission cube做smooth
         emissioncube._data=emissioncube._data-continuumcube.continuum.value
-        emissioncube._data=self._smooth_cube(emissioncube._data,1,3,3,3)
+        # emissioncube._data=self._smooth_cube(emissioncube._data,1,1,1,3)
 
         #利用noise cube产生mask cube并计算 optimal cube
         maskcube = emissioncube.mask_generate(self.noiselevel * noisecube.noise().mean())
         optimalcube=emissioncube.max_emission_extraction(maskcube)
         optimalcube.optimal_img=optimalcube.optimal_img+noisecube.noise().mean()*0.7
+
+        if smooth:
+            optimalcube.optimal_img = self.smooth(optimalcube.optimal_img, 5, 5, 3, 7)
+
         return optimalcube,noisecube,maskcube,emissioncube
 
     def snrmap(self):
@@ -226,14 +230,6 @@ class Map:
         optimalcube,noisecube,maskcube,_=self.optimalmap()
         snrmap = optimalcube.snrmap(noisecube.noise().mean(), maskcube)
         return snrmap
-
-    def smooth(self,img,x_stddev,y_stddev,x_size,y_size):
-
-        kernel=Gaussian2DKernel(x_stddev=x_stddev,y_stddev=y_stddev,
-                                x_size=x_size,y_size=y_size)
-        img_smooth=convolve(img,kernel)
-
-        return img_smooth
 
     def momentmap(self,order,redshift,restvalue):
         '''
@@ -250,6 +246,28 @@ class Map:
 
         return momentmap.to(u.km/u.s).value
 
+    def img_cut(self,p,boundary,snrmap):
+        '''
+        通过对SNR map的裁剪，只保留emission的部分
+        去除噪声，优化image
+        '''
+
+        '''
+        需要保留小部分噪声来显示sky成分，这里构建一个和SNR map相同
+        形状的2d possiblity map: p_map,其中每个元素包含在[0,1]区间内
+        均匀分布的一个数，给定一个threshold p，p_map>p构建出bool map，
+        这个bool map中大于p的位置为True（位置是随机的）, 利用boundary
+        抠出包含emission的部分，将bool map中对应区域改成True，利用bool map
+        就可以实现保留我们想要的 emission和部分sky
+        '''
+        p_map = np.random.rand(snrmap.shape[0],snrmap.shape[1])
+        bool_map = p_map > p
+
+        bool_map[boundary[0]:boundary[1],boundary[2]:boundary[3]] = True
+        snrmap[~bool_map] = 0
+
+        return snrmap
+
 def Img_interpsmooth(img,x,y,n_inter):
     '''
     interpolate the image with given interpolate
@@ -261,5 +279,9 @@ def Img_interpsmooth(img,x,y,n_inter):
     img_smooth_inter=ndimage.zoom(img,n_inter)
     x_inter=ndimage.zoom(x,n_inter[0])
     y_inter=ndimage.zoom(y,n_inter[1])
+
+    kernel = Gaussian2DKernel(x_stddev=1, y_stddev=3,
+                              x_size=1, y_size=3)
+    img_smooth_inter = convolve(img_smooth_inter, kernel)
 
     return img_smooth_inter,y_inter,x_inter
