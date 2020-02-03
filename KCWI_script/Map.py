@@ -34,7 +34,7 @@ velocity map, dispersion map。
 
 import numpy as np
 from astropy import units as u
-from Class_func import Map
+from Class_func import Map, Img_interpsmooth
 import matplotlib.pyplot as plt
 
 

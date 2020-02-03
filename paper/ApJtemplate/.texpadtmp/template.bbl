@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \ifx\adsurl \undefined \def\adsurl#1{\href{#1}{ADS}}\fi
 \ifx\eprint \undefined \def\eprint#1{\href{http://arxiv.org/abs/#1}{#1}}\fi
@@ -22,6 +22,11 @@ Emonts, B.~H., Cai, Z., Prochaska, J.~X., Li, Q., \& Lehnert, M.~D. 2019, The
   Swinbank}]{harrison2014kiloparsec}
 Harrison, C., Alexander, D., Mullaney, J., \& Swinbank, A. 2014, Monthly
   Notices of the Royal Astronomical Society, 441, 3306
+
+\bibitem[{Harrison {et~al.}(2018)Harrison, Costa, Tadhunter, Fl{\"u}tsch,
+  Kakkad, Perna, \& Vietri}]{harrison2018agn}
+Harrison, C., Costa, T., Tadhunter, C., Fl{\"u}tsch, A., Kakkad, D., Perna, M.,
+  \& Vietri, G. 2018, Nature Astronomy, 2, 198
 
 \bibitem[{Heckman {et~al.}(1990)Heckman, Armus, Miley,
   {et~al.}}]{heckman1990nature}
