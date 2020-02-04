@@ -86,4 +86,3 @@ civsnrmap[civsnrmap<3]=0
 civsnrmap=civmap.img_cut(0.95,[20,46,10,-2],civsnrmap)
 civvelocitymap=civmap.momentmap(order=1,redshift=2.34385,restvalue=1549*u.AA)
 civdispersionmap=civmap.momentmap(order=2,redshift=2.34385,restvalue=1549*u.AA)
-

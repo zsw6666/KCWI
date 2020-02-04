@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.4)  3 FEB 2020 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.4)  4 FEB 2020 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,15 +649,14 @@ Missing character: There is no Å in font cmr10!
 LaTeX Warning: Command \r invalid in math mode on input line 6.
 
 Missing character: There is no Å in font cmr10!
-) (./sections/Results.tex (./sections/results_sections/radio.tex) (./sections/results_sections/morphology.tex
+) (./sections/Results.tex (./sections/results_sections/radio.tex [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sections/results_sections/morphology.tex
 
 Package caption Warning: \label without proper reference on input line 10.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `overlayspec' on page 1 undefined on input line 3.
+LaTeX Warning: Reference `overlayspec' on page 2 undefined on input line 3.
 
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package caption Warning: \label without proper reference on input line 10.
 See the caption package documentation for explanation.
@@ -665,12 +664,12 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `overlayspec' on page 2 undefined on input line 5.
 
-<figs/contour.png, id=41, 438.6789pt x 485.6544pt>
+<figs/contour.png, id=39, 438.6789pt x 485.6544pt>
 File: figs/contour.png Graphic file (type png)
 <use figs/contour.png>
 Package pdftex.def Info: figs/contour.png  used on input line 8.
 (pdftex.def)             Requested size: 256.55872pt x 284.04369pt.
-<figs/spectral.png, id=43, 501.7947pt x 515.2851pt>
+<figs/spectral.png, id=41, 501.7947pt x 515.2851pt>
 File: figs/spectral.png Graphic file (type png)
 <use figs/spectral.png>
 Package pdftex.def Info: figs/spectral.png  used on input line 9.
@@ -683,7 +682,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `kinematicsmap' on page 2 undefined on input line 4.
 
-<figs/emissionmap.png, id=45, 630.9171pt x 626.34pt>
+<figs/emissionmap.png, id=43, 630.9171pt x 626.34pt>
 File: figs/emissionmap.png Graphic file (type png)
 <use figs/emissionmap.png>
 Package pdftex.def Info: figs/emissionmap.png  used on input line 7.
@@ -702,7 +701,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `slices' on page 2 undefined on input line 12.
 
-<figs/slices.png, id=48, 647.0574pt x 626.8218pt>
+<figs/slices.png, id=46, 647.0574pt x 626.8218pt>
 File: figs/slices.png Graphic file (type png)
 <use figs/slices.png>
 Package pdftex.def Info: figs/slices.png  used on input line 15.
@@ -717,12 +716,12 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fitpara' on page 2 undefined on input line 20.
 
-<figs/apertmap.png, id=50, 326.6604pt x 307.6293pt>
+<figs/apertmap.png, id=48, 326.6604pt x 307.6293pt>
 File: figs/apertmap.png Graphic file (type png)
 <use figs/apertmap.png>
 Package pdftex.def Info: figs/apertmap.png  used on input line 24.
 (pdftex.def)             Requested size: 256.55872pt x 241.61157pt.
-<figs/specmap.png, id=51, 904.0977pt x 337.5009pt>
+<figs/specmap.png, id=49, 904.0977pt x 337.5009pt>
 File: figs/specmap.png Graphic file (type png)
 <use figs/specmap.png>
 Package pdftex.def Info: figs/specmap.png  used on input line 28.
@@ -733,54 +732,54 @@ Overfull \hbox (58.33853pt too wide) in paragraph at lines 34--45
  []
 
 ) (./sections/results_sections/outflowmodel.tex [2])) (./sections/Discussion.tex (./sections/discussion_sections/outflowmechanism.tex
-<figs/coupleeffi_AGN_SF.png, id=79, 578.16pt x 578.16pt>
+<figs/coupleeffi_AGN_SF.png, id=74, 578.16pt x 578.16pt>
 File: figs/coupleeffi_AGN_SF.png Graphic file (type png)
 <use figs/coupleeffi_AGN_SF.png>
 Package pdftex.def Info: figs/coupleeffi_AGN_SF.png  used on input line 6.
 (pdftex.def)             Requested size: 256.55872pt x 256.55257pt.
-<figs/coupleeffi_AGN.png, id=80, 578.16pt x 578.16pt>
+<figs/coupleeffi_AGN.png, id=75, 578.16pt x 578.16pt>
 File: figs/coupleeffi_AGN.png Graphic file (type png)
 <use figs/coupleeffi_AGN.png>
 Package pdftex.def Info: figs/coupleeffi_AGN.png  used on input line 7.
 (pdftex.def)             Requested size: 256.55872pt x 256.55257pt.
+ [3 <./figs/contour.png> <./figs/spectral.png>] [4 <./figs/emissionmap.png>]
 
-
-Package caption Warning: \label without proper reference on input line 13.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `coupeffic' on page 3 undefined on input line 14.
-
-
-Package caption Warning: \label without proper reference on input line 13.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `coupeffic' on page 3 undefined on input line 14.
-
-
-Package caption Warning: \label without proper reference on input line 13.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `coupeffic' on page 3 undefined on input line 14.
-
-[3 <./figs/contour.png> <./figs/spectral.png>] [4 <./figs/emissionmap.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 15.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 13.
 
 [5 <./figs/slices.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 15.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 13.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 [6 <./figs/apertmap.png> <./figs/specmap.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 15.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 13.
 
 [7 <./figs/coupleeffi_AGN_SF.png> <./figs/coupleeffi_AGN.png>]
+
+Package caption Warning: \label without proper reference on input line 13.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `coupeffic' on page 8 undefined on input line 14.
+
+
+Package caption Warning: \label without proper reference on input line 13.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `coupeffic' on page 8 undefined on input line 14.
+
+
+Package caption Warning: \label without proper reference on input line 13.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `coupeffic' on page 8 undefined on input line 14.
+
+
 Underfull \hbox (badness 2165) in paragraph at lines 16--17
 []\T1/ptm/m/n/10 Besides, if we in-stead con-sider a momentum-driven
  []
@@ -790,19 +789,20 @@ Underfull \hbox (badness 1184) in paragraph at lines 20--21
 \T1/ptm/m/n/10 two fac-tors are con-sis-tent with the large-scale en-vi-ron-
  []
 
-) (./sections/discussion_sections/galaxymerger.tex
-<figs/P_coup_SF.png, id=142, 526.6074pt x 491.9178pt>
+) (./sections/discussion_sections/galaxymerger.tex [8]
+<figs/P_coup_SF.png, id=152, 526.6074pt x 491.9178pt>
 File: figs/P_coup_SF.png Graphic file (type png)
 <use figs/P_coup_SF.png>
 Package pdftex.def Info: figs/P_coup_SF.png  used on input line 11.
 (pdftex.def)             Requested size: 256.55872pt x 239.6607pt.
-<figs/P_coup_AGN.png, id=143, 517.935pt x 493.1223pt>
+<figs/P_coup_AGN.png, id=153, 517.935pt x 493.1223pt>
 File: figs/P_coup_AGN.png Graphic file (type png)
 <use figs/P_coup_AGN.png>
 Package pdftex.def Info: figs/P_coup_AGN.png  used on input line 12.
 (pdftex.def)             Requested size: 256.55872pt x 244.28064pt.
-)) (./sections/Conclusions.tex) (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.bbl [8]) [9 <./figs/P_coup_SF.png> <./figs/P_coup_AGN.png>]
+)) (./sections/Conclusions.tex) (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.bbl) [9]
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+ [10 <./figs/P_coup_SF.png> <./figs/P_coup_AGN.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
  (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.aux)
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 102.
@@ -815,18 +815,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11560 strings out of 492649
- 163595 string characters out of 6129623
- 324577 words of memory out of 5000000
+ 11563 strings out of 492649
+ 163620 string characters out of 6129623
+ 325906 words of memory out of 5000000
  15173 multiletter control sequences out of 15000+600000
- 56416 words of font info for 90 fonts, out of 8000000 for 9000
+ 57036 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,51p,2587b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.pdf (9 pages, 2947620 bytes).
+Output written on /Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.pdf (10 pages, 2949667 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
