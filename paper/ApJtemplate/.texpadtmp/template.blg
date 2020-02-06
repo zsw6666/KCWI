@@ -4,44 +4,44 @@ The top-level auxiliary file: /Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code
 The style file: ../apj_hyperref.bst
 Database file #1: ../template.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 43 entries,
+You've used 44 entries,
             3102 wiz_defined-function locations,
-            926 strings with 14329 characters,
-and the built_in function-call counts, 22724 in all, are:
-= -- 1794
-> -- 1776
+            931 strings with 14651 characters,
+and the built_in function-call counts, 23328 in all, are:
+= -- 1841
+> -- 1835
 < -- 11
-+ -- 666
-- -- 597
-* -- 2040
-:= -- 4173
-add.period$ -- 43
-call.type$ -- 43
-change.case$ -- 384
-chr.to.int$ -- 43
-cite$ -- 43
-duplicate$ -- 890
-empty$ -- 1294
-format.name$ -- 732
-if$ -- 4372
++ -- 689
+- -- 619
+* -- 2099
+:= -- 4290
+add.period$ -- 44
+call.type$ -- 44
+change.case$ -- 398
+chr.to.int$ -- 44
+cite$ -- 44
+duplicate$ -- 909
+empty$ -- 1319
+format.name$ -- 757
+if$ -- 4480
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 43
-newline$ -- 135
-num.names$ -- 172
-pop$ -- 481
+missing$ -- 44
+newline$ -- 138
+num.names$ -- 176
+pop$ -- 497
 preamble$ -- 1
-purify$ -- 384
+purify$ -- 398
 quote$ -- 0
-skip$ -- 678
+skip$ -- 691
 stack$ -- 0
-substring$ -- 938
+substring$ -- 949
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 387
+type$ -- 396
 warning$ -- 0
-while$ -- 167
+while$ -- 169
 width$ -- 0
-write$ -- 435
+write$ -- 444

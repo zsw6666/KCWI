@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{44}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \ifx\adsurl \undefined \def\adsurl#1{\href{#1}{ADS}}\fi
 \ifx\eprint \undefined \def\eprint#1{\href{http://arxiv.org/abs/#1}{#1}}\fi
@@ -24,6 +24,10 @@ Borgani, S., Fabjan, D., Tornatore, L., Schindler, S., Dolag, K., \& Diaferio,
 Bower, R.~G., Benson, A., Malbon, R., Helly, J., Frenk, C., Baugh, C., Cole,
   S., \& Lacey, C.~G. 2006, Monthly Notices of the Royal Astronomical Society,
   370, 645
+
+\bibitem[{Cai {et~al.}(2015)Cai, Fan, Peirani, Bian, Frye, McGreer, Prochaska,
+  Lau, Tejos, Ho, {et~al.}}]{cai2015mapping}
+Cai, Z. {et~al.} 2015, arXiv preprint arXiv:1512.06859
 
 \bibitem[{Cai {et~al.}(2017)Cai, Fan, Yang, Bian, Prochaska, Zabludoff,
   McGreer, Zheng, Green, Cantalupo, {et~al.}}]{cai2017discovery}
