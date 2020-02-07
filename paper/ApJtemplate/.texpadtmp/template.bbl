@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{45}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \ifx\adsurl \undefined \def\adsurl#1{\href{#1}{ADS}}\fi
 \ifx\eprint \undefined \def\eprint#1{\href{http://arxiv.org/abs/#1}{#1}}\fi
@@ -88,6 +88,10 @@ Harrison, C., Alexander, D., Mullaney, J., \& Swinbank, A. 2014, Monthly
   Kakkad, Perna, \& Vietri}]{harrison2018agn}
 Harrison, C., Costa, T., Tadhunter, C., Fl{\"u}tsch, A., Kakkad, D., Perna, M.,
   \& Vietri, G. 2018, Nature Astronomy, 2, 198
+
+\bibitem[{Harrison(2016)}]{harrison2016observational}
+Harrison, C.~M. 2016, Observational constraints on the influence of active
+  galactic nuclei on the evolution of galaxies (Springer)
 
 \bibitem[{Heckman {et~al.}(1990)Heckman, Armus, Miley,
   {et~al.}}]{heckman1990nature}

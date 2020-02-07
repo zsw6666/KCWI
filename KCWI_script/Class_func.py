@@ -277,11 +277,11 @@ def Img_interpsmooth(img,x,y,n_inter):
     '''
 
     img_smooth_inter=ndimage.zoom(img,n_inter)
-    # x_inter=ndimage.zoom(x,n_inter[0])
-    # y_inter=ndimage.zoom(y,n_inter[1])
+    x_inter=ndimage.zoom(x,n_inter[0])
+    y_inter=ndimage.zoom(y,n_inter[1])
 
     kernel = Gaussian2DKernel(x_stddev=1, y_stddev=3,
                               x_size=1, y_size=3)
     img_smooth_inter = convolve(img_smooth_inter, kernel)
 
-    return img_smooth_inter#,y_inter,x_inter
+    return img_smooth_inter,y_inter,x_inter

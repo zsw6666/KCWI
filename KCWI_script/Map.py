@@ -67,6 +67,7 @@ civmap=Map(filename='/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/1441+4003_comb_psfs
 
 lyoptimalcube,lynoisecube,_,lyemissioncube=lymap.optimalmap()
 lysnrmap=lymap.snrmap()
+lysnrmap[lysnrmap<3]=0
 lysnrmap=lymap.img_cut(0.99,[2,-1,2,-1],lysnrmap)
 lyvelocitymap=lymap.momentmap(order=1,redshift=2.31,restvalue=1215.67*u.AA)
 lydispersionmap=lymap.momentmap(order=2,redshift=2.31,restvalue=1215.67*u.AA)
