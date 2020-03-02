@@ -1,24 +1,28 @@
 \documentclass[../Results.tex]{subfiles}
 \begin{document}
-	Fig. \ref{overlayspec} shows the HST image of MAMMOTH-1 with WFC F160W filter with contours for Ly$\alpha$ HeII and CIV emission. All sources marked here are at z=2.3 confirmed by CO(1-0) emission(\cite{emonts2019cold}) and CO(3-2) emission(Qiong (in prep)). It shows Ly$\alpha$ emission extended $>20"$ which corresponds to $\approx170$kpc, this is the typical size of halo at this redshift. It covers all 8 sources here, this indicates that all of this sources could have contribution to illuminate this nebulae. Size of this nebulae is limited by the FoV of KCWI which is $20" \times 16.8"$ and is not sensitive enough at the edges. Furthermore, we clearly see that there are three peaks around Source-B, two out of the three peaks are on both sides of the G-5 respectively(Fig.\ref{kinematicsmap}). Besides, HeII and CIV emission also show extent signals(>$3\sigma$) which extend to $\approx 10"$ (physical projected scale of 85kpc) in the north-south direction(CIV emission even cover G-5).
-	
-	Fig. \ref{overlayspec} shows spectra extract in 1 $arcsec^{2}$ aperture centering on the flux peaks. We fit the three emission lines with single component gaussian function and also use the central wavelength fitted to calculate their redshifts, moreover we calculate their luminosity beyond $3\sigma$. We show these results and the fitting parameters in Tab. \ref{fit_L}. 
-	\begin{figure*}
+We construct continuum-free line images by summing over the wavelength range of the emission lines in data cubes and subtracting the underlying continuum component from them. The continuum component is estimated by taking average from another wavelength range out of line emission ( or absorption). We show the results in the left panel of Fig. \ref{overlayspec}. The three contours of different colors representing signal-to-noise ratio (SNR) show the spatially extended emission of Ly$\alpha$ HeII and CIV with the first contour corresponding to 2 and steps between contours to 2. The background image was taken by Wide Field Camera 3 (WFC3) on Hubble Space Telescope (HST) with F160W filter. Sources labeled from G-1 to G-5 are galaxies at the same redshift ($\rm z \approx 2.3$) with Source-B confirmed by CO (1-0) emission and CO (3-2) emission \citep{emonts2019cold,qiongli2020}. The emitting structure shows Ly$\alpha$ nebula covers all of the marked objects and extends to $\rm 20\arcsec$ which corresponds to 164 kpc. It also shows that the physical projected size of extended HeII and CIV emission reaches to $9 \arcsec$ corresponding to 74 kpc.
+
+Spectra are extracted within aperture centering on the peak of emission with radius of $1.5\arcsec$ (larger than the spatial resolution of KCWI) and shown in the right panel. To determine the redshifts of these widely extended nebulaes, we fit the three emission lines with one-component gaussian function and estimate the wavelength of line centre. The fitted parameters are shown in Tab.\ref{fit_L}. By converting the line width (\AA) to FWHM (km/s) it seems that all of the three emission line have a relatively large FWHM which equals to $\rm FWHM_{Ly}=1225 \ km/s$, $\rm FWHM_{HeII}=1039 \ km/s$ and $\rm FWHM_{CIV}=1786 \ km/s$. This result indicates that there may be extremely violent kinematic activity in the nebula on a physical scale of 100 kpc.
+
+Because the surface brightness (SB) values for both kinematically narrow and broad features would have been either lost in the noise or underestimated in a narrow-band (NB) image with single width of wavelength, we adopt optimally-extract method from \citet{borisova2016ubiquitous} to construct psudo-NB images which can reach to a larger dynamic range comparing to a standard image. These images are obtained by using a three dimensional segmentation mask (3D mask) which defines a three-dimensional SNR surface in the cube, pixels with values below the SNR threshold are masked and only pixels possessing significant signal are extracted. Therefore, the signal of each pixel are integrated along a slightly different range in wavelength which allows us to obtain images or spectra with maximal SNR after stacking along spatial axis or spectral axis. In particular, images presented in Fig. \ref{kinematicsmap} (left column) are obtained by using this method after continuum-subtraction and stacking along spectral axis. The three extended emissions are detected at faint levels with 1-$\sigma$ SB of $\rm SB_{Ly}=xxx \ erg \ s^{-1} \ cm^{-2} \ arcsec^{-2}$, $\rm SB_{HeII}=xxx \ erg \ s^{-1} \ cm^{-2} \ arcsec^{-2}$ and $\rm SB_{CIV}=xxx \ erg \ s^{-1} \ cm^{-2} \ arcsec^{-2}$. 
+
+
+\begin{figure*}
 		\centering
 		\subfloat[contour]{\includegraphics[width=0.5\textwidth]{figs/contour}}
 		\subfloat[spectra]{\includegraphics[width=0.5\textwidth]{figs/spectral}}
 		\label{overlayspec}
 		\caption{Left: HST image of MAMMOTH-1 from circle 24,25, PI: Cai. We overlay on it Ly$\alpha$ HeII and CIV psudo narrow band images. Black contour is Ly$\alpha$, blue contour is HeII, green contour is CIV. We also mark source-B with red mark and sources at the same redshift with yellow mark. We also plot circle with raidus of 1$arcsec^{2}$. Right: spectra of the 3 emission lines extracted from aperture center on source-B with radius 1$arcsec^{2}$, we fit them with one-component gaussian function.}
-	\end{figure*}
+\end{figure*}
 	\begin{table}[htp]
 	\begin{center}
 		\begin{tabular}{ccccc}
 \hline
 \hline
-& $\lambda_{c}(A)$ & $\sigma_{\lambda}(A)$ & L(erg/s) & redshift \\ \hline
-Ly$\alpha$ &   4024  &     7  &   $2.68 \times 10^{44}$ & 2.310        \\
-HeII       &   5438  &     8  &   $1.97 \times 10^{43}$ & 2.316        \\
-CIV        &   5143  &     13 &   $2.29 \times 10^{43}$ & 2.320        \\ \hline
+& $\rm \lambda_{c}$(\AA) & $\rm \sigma_{\lambda}$(\AA) & L(erg/s) & redshift \\ \hline
+Ly$\alpha$ &   4024  &     7  &   $\rm 2.68 \times 10^{44}$ & 2.310        \\
+HeII       &   5438  &     8  &   $\rm 1.97 \times 10^{43}$ & 2.316        \\
+CIV        &   5143  &     13 &   $\rm 2.29 \times 10^{43}$ & 2.320        \\ \hline
 \end{tabular}
 \end{center}
 	\caption{}

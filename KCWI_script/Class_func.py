@@ -20,8 +20,6 @@ Class:
 '''
 
 
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy import units as u
@@ -84,7 +82,7 @@ class Cube(SpectralCube):
 
         return maskcube
 
-    def max_emission_extraction(self,maskcube):
+    def max_emission_extraction(self,maskcube,aver=True):
         '''
         extract the emission region as large as possible.
         The idea is to select
@@ -94,7 +92,10 @@ class Cube(SpectralCube):
         mask=np.sum(maskcube,axis=0)
         mask[mask==0]=1.
         optimal_img=optimal_datacube.sum(axis=0)
-        self.optimal_img=optimal_img/mask
+        if aver:
+            self.optimal_img=optimal_img/mask
+        else:
+            self.optimal_img = optimal_img
         optimalcube=Cube(data=optimal_datacube,wcs=self.wcs,
                          refpoint=self.refpoint)
         optimalcube.optimal_img=self.optimal_img
@@ -152,7 +153,9 @@ class Cube(SpectralCube):
         '''
         if self.optimal_img is not None:
             mask=np.sum(maskcube,axis=0)
+            # SNR should propotional to sqrt(k)
             snrmap=(self.optimal_img-0.7*noise)*np.sqrt(mask)/noise
+            # snrmap = (self.optimal_img - 0.7 * noise) / (noise * np.sqrt(mask))
         else:
             print("There's no optimal-extracted image for cube!")
         return snrmap
