@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{54}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \ifx\adsurl \undefined \def\adsurl#1{\href{#1}{ADS}}\fi
 \ifx\eprint \undefined \def\eprint#1{\href{http://arxiv.org/abs/#1}{#1}}\fi
@@ -217,6 +217,10 @@ Somerville, R.~S., Hopkins, P.~F., Cox, T.~J., Robertson, B.~E., \& Hernquist,
 \bibitem[{Storey \& Hummer(1995)}]{storey1995recombination}
 Storey, P., \& Hummer, D. 1995, Monthly Notices of the Royal Astronomical
   Society, 272, 41
+
+\bibitem[{Toba {et~al.}(2019)Toba, Yamashita, Nagao, Wang, Ueda, Ichikawa,
+  Kawaguchi, Akiyama, Hsieh, Kajisawa, \& et~al.}]{Toba_2019}
+Toba, Y. {et~al.} 2019, The Astrophysical Journal Supplement Series, 243, 15
 
 \bibitem[{Tombesi {et~al.}(2013)Tombesi, Cappi, Reeves, Nemmen, Braito,
   Gaspari, \& Reynolds}]{tombesi2013unification}
