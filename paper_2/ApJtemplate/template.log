@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2019.4.4)  2 MAR 2020 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2019.4.4)  5 MAR 2020 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -555,4 +555,60 @@ See the caption package documentation for explanation.
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p \ifx \@captype \xfigure \gdef \@currentlabel {\thefigure } \else \gdef \@curr
 entlabel {\thetable }\fi \sbox \@tempboxa {\small {\bf #1.} #2}\ifdim \wd \@tem
-p
+pboxa >\hsize \footnotesize {\bf #1.} #2\par \else \global \@minipagefalse \hb@
+xt@ \hsize {\hfill \box \@tempboxa \hfill }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count167
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+))
+\c@KVtest=\count168
+\sf@farskip=\skip70
+\sf@captopadj=\dimen145
+\sf@capskip=\skip71
+\sf@nearskip=\skip72
+\c@subfigure=\count169
+\c@subfigure@save=\count170
+\c@lofdepth=\count171
+\c@subtable=\count172
+\c@subtable@save=\count173
+\c@lotdepth=\count174
+\sf@top=\skip73
+\sf@bottom=\skip74
+)
+Class revtex4-1 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 10.
+Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with
+ fingers crossed) on input line 10.
+
+
+! LaTeX Error: Command \longtable* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{document}
+                     
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.10 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 10584 strings out of 492650
+ 147447 string characters out of 6129649
+ 297859 words of memory out of 5000000
+ 14385 multiletter control sequences out of 15000+600000
+ 5111 words of font info for 17 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,0n,42p,2587b,37s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
