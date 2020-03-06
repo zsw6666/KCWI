@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{55}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \ifx\adsurl \undefined \def\adsurl#1{\href{#1}{ADS}}\fi
 \ifx\eprint \undefined \def\eprint#1{\href{http://arxiv.org/abs/#1}{#1}}\fi
@@ -180,6 +180,11 @@ Nayakshin, S., \& Zubovas, K. 2012, Monthly Notices of the Royal Astronomical
   Van~Breugel}]{nesvadba2008evidence}
 Nesvadba, N., Lehnert, M., De~Breuck, C., Gilbert, A., \& Van~Breugel, W. 2008,
   Astronomy \& Astrophysics, 491, 407
+
+\bibitem[{Nesvadba {et~al.}(2006)Nesvadba, Lehnert, Eisenhauer, Gilbert, Tecza,
+  \& Abuter}]{Nesvadba_2006}
+Nesvadba, N. P.~H., Lehnert, M.~D., Eisenhauer, F., Gilbert, A., Tecza, M., \&
+  Abuter, R. 2006, The Astrophysical Journal, 650, 693–705
 
 \bibitem[{Richards {et~al.}(2006)Richards, Strauss, Fan, Hall, Jester,
   Schneider, Berk, Stoughton, Anderson, Brunner, {et~al.}}]{richards2006sloan}
