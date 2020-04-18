@@ -3,51 +3,51 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.aux
 The style file: ../apj_hyperref.bst
 Database file #1: ../template.bib
-I was expecting a `,' or a `}'---line 414 of file ../template.bib
+I was expecting a `,' or a `}'---line 669 of file ../template.bib
  :   
  :   journal={arXiv preprint arXiv:1204.4114},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 55 entries,
+You've used 62 entries,
             3102 wiz_defined-function locations,
-            994 strings with 17283 characters,
-and the built_in function-call counts, 29374 in all, are:
-= -- 2324
-> -- 2297
-< -- 13
-+ -- 866
-- -- 780
-* -- 2655
-:= -- 5388
-add.period$ -- 55
-call.type$ -- 55
-change.case$ -- 509
-chr.to.int$ -- 54
-cite$ -- 55
-duplicate$ -- 1127
-empty$ -- 1666
-format.name$ -- 947
-if$ -- 5648
-int.to.chr$ -- 2
+            1049 strings with 18647 characters,
+and the built_in function-call counts, 32785 in all, are:
+= -- 2627
+> -- 2426
+< -- 17
++ -- 910
+- -- 816
+* -- 2921
+:= -- 5936
+add.period$ -- 62
+call.type$ -- 62
+change.case$ -- 550
+chr.to.int$ -- 60
+cite$ -- 62
+duplicate$ -- 1272
+empty$ -- 1933
+format.name$ -- 1008
+if$ -- 6386
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 53
-newline$ -- 171
-num.names$ -- 220
-pop$ -- 622
+missing$ -- 60
+newline$ -- 192
+num.names$ -- 248
+pop$ -- 672
 preamble$ -- 1
-purify$ -- 508
+purify$ -- 549
 quote$ -- 0
-skip$ -- 880
+skip$ -- 1054
 stack$ -- 0
-substring$ -- 1223
-swap$ -- 2
+substring$ -- 1541
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 492
+type$ -- 555
 warning$ -- 0
-while$ -- 207
+while$ -- 235
 width$ -- 0
-write$ -- 553
+write$ -- 622
 (There was 1 error message)

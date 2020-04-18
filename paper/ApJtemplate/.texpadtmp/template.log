@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.4)  6 MAR 2020 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.4)  30 MAR 2020 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -509,64 +509,243 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 \c@lotdepth=\count173
 \sf@top=\skip73
 \sf@bottom=\skip74
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/kantlipsum/kantlipsum.sty (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
+\c_max_int=\count174
+\l_tmpa_int=\count175
+\l_tmpb_int=\count176
+\g_tmpa_int=\count177
+\g_tmpb_int=\count178
+\g__intarray_font_int=\count179
+\g__prg_map_int=\count180
+\c_log_iow=\count181
+\l_iow_line_count_int=\count182
+\l__iow_line_target_int=\count183
+\l__iow_one_indent_int=\count184
+\l__iow_indent_int=\count185
+\c_zero_dim=\dimen146
+\c_max_dim=\dimen147
+\l_tmpa_dim=\dimen148
+\l_tmpb_dim=\dimen149
+\g_tmpa_dim=\dimen150
+\g_tmpb_dim=\dimen151
+\c_zero_skip=\skip75
+\c_max_skip=\skip76
+\l_tmpa_skip=\skip77
+\l_tmpb_skip=\skip78
+\g_tmpa_skip=\skip79
+\g_tmpb_skip=\skip80
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count186
+\c__fp_leading_shift_int=\count187
+\c__fp_middle_shift_int=\count188
+\c__fp_trailing_shift_int=\count189
+\c__fp_big_leading_shift_int=\count190
+\c__fp_big_middle_shift_int=\count191
+\c__fp_big_trailing_shift_int=\count192
+\c__fp_Bigg_leading_shift_int=\count193
+\c__fp_Bigg_middle_shift_int=\count194
+\c__fp_Bigg_trailing_shift_int=\count195
+\c__fp_rand_size_int=\count196
+\c__fp_rand_four_int=\count197
+\c__fp_rand_eight_int=\count198
+\l__sort_length_int=\count199
+\l__sort_min_int=\count266
+\l__sort_top_int=\count267
+\l__sort_max_int=\count268
+\l__sort_true_max_int=\count269
+\l__sort_block_int=\count270
+\l__sort_begin_int=\count271
+\l__sort_end_int=\count272
+\l__sort_A_int=\count273
+\l__sort_B_int=\count274
+\l__sort_C_int=\count275
+\l__tl_build_start_index_int=\count276
+\l__tl_build_index_int=\count277
+\l__tl_analysis_normal_int=\count278
+\l__tl_analysis_index_int=\count279
+\l__tl_analysis_nesting_int=\count280
+\l__tl_analysis_type_int=\count281
+\l__regex_internal_a_int=\count282
+\l__regex_internal_b_int=\count283
+\l__regex_internal_c_int=\count284
+\l__regex_balance_int=\count285
+\l__regex_group_level_int=\count286
+\l__regex_mode_int=\count287
+\c__regex_cs_in_class_mode_int=\count288
+\c__regex_cs_mode_int=\count289
+\l__regex_catcodes_int=\count290
+\l__regex_default_catcodes_int=\count291
+\c__regex_catcode_D_int=\count292
+\c__regex_catcode_S_int=\count293
+\c__regex_catcode_L_int=\count294
+\c__regex_catcode_O_int=\count295
+\c__regex_catcode_A_int=\count296
+\c__regex_all_catcodes_int=\count297
+\l__regex_show_lines_int=\count298
+\l__regex_min_state_int=\count299
+\l__regex_max_state_int=\count300
+\l__regex_left_state_int=\count301
+\l__regex_right_state_int=\count302
+\l__regex_capturing_group_int=\count303
+\l__regex_min_pos_int=\count304
+\l__regex_max_pos_int=\count305
+\l__regex_curr_pos_int=\count306
+\l__regex_start_pos_int=\count307
+\l__regex_success_pos_int=\count308
+\l__regex_curr_char_int=\count309
+\l__regex_curr_catcode_int=\count310
+\l__regex_last_char_int=\count311
+\l__regex_case_changed_char_int=\count312
+\l__regex_curr_state_int=\count313
+\l__regex_step_int=\count314
+\l__regex_min_active_int=\count315
+\l__regex_max_active_int=\count316
+\l__regex_replacement_csnames_int=\count317
+\l__regex_match_count_int=\count318
+\l__regex_min_submatch_int=\count319
+\l__regex_submatch_int=\count320
+\l__regex_zeroth_submatch_int=\count321
+\g__regex_trace_regex_int=\count322
+\c_empty_box=\box63
+\l_tmpa_box=\box64
+\l_tmpb_box=\box65
+\g_tmpa_box=\box66
+\g_tmpb_box=\box67
+\l__box_top_dim=\dimen152
+\l__box_bottom_dim=\dimen153
+\l__box_left_dim=\dimen154
+\l__box_right_dim=\dimen155
+\l__box_top_new_dim=\dimen156
+\l__box_bottom_new_dim=\dimen157
+\l__box_left_new_dim=\dimen158
+\l__box_right_new_dim=\dimen159
+\l__box_internal_box=\box68
+\l__coffin_internal_box=\box69
+\l__coffin_internal_dim=\dimen160
+\l__coffin_offset_x_dim=\dimen161
+\l__coffin_offset_y_dim=\dimen162
+\l__coffin_x_dim=\dimen163
+\l__coffin_y_dim=\dimen164
+\l__coffin_x_prime_dim=\dimen165
+\l__coffin_y_prime_dim=\dimen166
+\c_empty_coffin=\box70
+\l__coffin_aligned_coffin=\box71
+\l__coffin_aligned_internal_coffin=\box72
+\l_tmpa_coffin=\box73
+\l_tmpb_coffin=\box74
+\l__coffin_display_coffin=\box75
+\l__coffin_display_coord_coffin=\box76
+\l__coffin_display_pole_coffin=\box77
+\l__coffin_display_offset_dim=\dimen167
+\l__coffin_display_x_dim=\dimen168
+\l__coffin_display_y_dim=\dimen169
+\l__coffin_bounding_shift_dim=\dimen170
+\l__coffin_left_corner_dim=\dimen171
+\l__coffin_right_corner_dim=\dimen172
+\l__coffin_bottom_corner_dim=\dimen173
+\l__coffin_top_corner_dim=\dimen174
+\l__coffin_scaled_total_height_dim=\dimen175
+\l__coffin_scaled_width_dim=\dimen176
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count323
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count324
+\g__xparse_grabber_int=\count325
+\l__xparse_m_args_int=\count326
+\l__xparse_mandatory_args_int=\count327
+\l__xparse_v_nesting_int=\count328
 )
-Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 10.
-Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 10.
+Package: kantlipsum 2017/11/16 v0.7 Generate text in Kantian style
+\l__kgl_start_int=\count329
+\l__kgl_end_int=\count330
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \kant with sig. 's>{\SplitArgument {1}{-}}O{1-7}' on line
+. 76.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \kantdef with sig. 'mm' on line 91.
+.................................................
+.................................................
+. kantlipsum info: "how-many"
+. 
+. The package provides paragraphs 1 to 164. Values outside this range will be
+. ignored.
+.................................................
+)
+Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 11.
+Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 11.
 
 
-./template.tex:10: LaTeX Error: Command \longtable* already defined.
+./template.tex:11: LaTeX Error: Command \longtable* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 \begin{document}
+l.11 \begin{document}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 10.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 10.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 10.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 10.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 11.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 11.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 11.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 11.
 (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.aux
+
+LaTeX Warning: Label `overlayspec' multiply defined.
+
 
 LaTeX Warning: Label `coupeffic' multiply defined.
 
 )
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 11.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count174
-\scratchdimen=\dimen146
-\scratchbox=\box63
-\nofMPsegments=\count175
-\nofMParguments=\count176
+\scratchcounter=\count331
+\scratchdimen=\dimen177
+\scratchbox=\box78
+\nofMPsegments=\count332
+\nofMParguments=\count333
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count177
-\MPscratchDim=\dimen147
-\MPnumerator=\count178
-\makeMPintoPDFobject=\count179
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen178
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
 \everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -580,18 +759,18 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring ON on input line 10.
+\AtBeginShipoutBox=\box79
+Package hyperref Info: Link coloring ON on input line 11.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count180
+\c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: Incompatible package detected (regarding \caption).
@@ -604,45 +783,56 @@ Package caption Warning: \caption will not be redefined since it's already
 See the caption package documentation for explanation.
 
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 38.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+eur on input line 38.
+LaTeX Font Info:    Try loading font information for U+eur on input line 39.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
+
+./template.tex:50: Text line contains an invalid character.
+l.50 ...and FWHM of $\rm \sigma_{v}>1400 km/s$.^^@
+                                                   With these evidences, we ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
- (./sections/Introductions.tex [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sections/Observations.tex) (./sections/Results.tex (./sections/results_sections/radio.tex [2]
-<figs/SED_fitting.png, id=117, 505.89pt x 375.0813pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
+(./sections/Introductions.tex [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sections/Observations.tex [2]
+Underfull \hbox (badness 2142) in paragraph at lines 11--12
+\T1/ptm/m/n/10 dimensional pro-jec-tions of the ex-tracted sources, such
+ []
+
+) (./sections/Results.tex (./sections/results_sections/radio.tex
+<figs/SED_fitting.png, id=116, 450.483pt x 397.7259pt>
 File: figs/SED_fitting.png Graphic file (type png)
 <use figs/SED_fitting.png>
 Package pdftex.def Info: figs/SED_fitting.png  used on input line 8.
-(pdftex.def)             Requested size: 242.26653pt x 179.6249pt.
-) (./sections/results_sections/morphology.tex
+(pdftex.def)             Requested size: 242.26653pt x 213.89488pt.
+ [3 <./figs/SED_fitting.png>]) (./sections/results_sections/morphology.tex
 
-Package caption Warning: \label without proper reference on input line 14.
+Package caption Warning: \label without proper reference on input line 32.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `overlayspec' on page 3 undefined on input line 3.
+LaTeX Warning: Reference `overlayspec' on page 4 undefined on input line 3.
 
-[3 <./figs/SED_fitting.png>]
 
 Package caption Warning: \label without proper reference on input line 17.
 See the caption package documentation for explanation.
@@ -650,133 +840,169 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `kinematicsmap' on page 4 undefined on input line 7.
 
-<figs/contour.png, id=155, 434.1018pt x 478.9092pt>
+
+Package caption Warning: \label without proper reference on input line 8.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `H_alpha' on page 4 undefined on input line 9.
+
+
+Package caption Warning: \label without proper reference on input line 8.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `H_alpha' on page 4 undefined on input line 9.
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 9--10
+[]\T1/ptm/m/n/10 We also ob-tain the NB im-age of H$\OML/cmm/m/it/10 $ \T1/ptm/m/n/10 emis-sion with
+ []
+
+<figs/contour.png, id=158, 431.6928pt x 484.4499pt>
 File: figs/contour.png Graphic file (type png)
 <use figs/contour.png>
-Package pdftex.def Info: figs/contour.png  used on input line 12.
-(pdftex.def)             Requested size: 256.55872pt x 283.04358pt.
-<figs/spectral.png, id=156, 492.6405pt x 511.6716pt>
+Package pdftex.def Info: figs/contour.png  used on input line 14.
+(pdftex.def)             Requested size: 256.55872pt x 287.91493pt.
+<figs/spectral.png, id=159, 490.9542pt x 508.0581pt>
 File: figs/spectral.png Graphic file (type png)
 <use figs/spectral.png>
-Package pdftex.def Info: figs/spectral.png  used on input line 13.
-(pdftex.def)             Requested size: 256.55872pt x 266.47675pt.
-) (./sections/results_sections/kinematics.tex
+Package pdftex.def Info: figs/spectral.png  used on input line 15.
+(pdftex.def)             Requested size: 256.55872pt x 265.50188pt.
+) (./sections/results_sections/H_alpha.tex
+<figs/raito_contour.png, id=160, 425.9112pt x 479.6319pt>
+File: figs/raito_contour.png Graphic file (type png)
+<use figs/raito_contour.png>
+Package pdftex.def Info: figs/raito_contour.png  used on input line 6.
+(pdftex.def)             Requested size: 256.55872pt x 288.91574pt.
+<figs/H_alpha_ly_alpha_ratio.png, id=161, 308.352pt x 324.9741pt>
+File: figs/H_alpha_ly_alpha_ratio.png Graphic file (type png)
+<use figs/H_alpha_ly_alpha_ratio.png>
+Package pdftex.def Info: figs/H_alpha_ly_alpha_ratio.png  used on input line 7.
+(pdftex.def)             Requested size: 256.55872pt x 270.3929pt.
+) [4] (./sections/results_sections/kinematics.tex
 
 Package caption Warning: \label without proper reference on input line 17.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `kinematicsmap' on page 4 undefined on input line 6.
+LaTeX Warning: Reference `kinematicsmap' on page 5 undefined on input line 6.
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 6--7
+[]\T1/ptm/m/n/10 Fig. [][][][][] shows the mo-ment maps to-gether with the
+ []
 
 
 Package caption Warning: \label without proper reference on input line 24.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `slices' on page 4 undefined on input line 10.
+LaTeX Warning: Reference `slices' on page 5 undefined on input line 10.
 
 
-Package caption Warning: \label without proper reference on input line 35.
+Package caption Warning: \label without proper reference on input line 32.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `spectralss' on page 4 undefined on input line 10.
+LaTeX Warning: Reference `overlayspec' on page 5 undefined on input line 10.
 
-<figs/emissionmap.png, id=165, 624.4128pt x 624.4128pt>
+[5 <./figs/contour.png> <./figs/spectral.png>]
+<figs/emissionmap.png, id=202, 624.4128pt x 609.477pt>
 File: figs/emissionmap.png Graphic file (type png)
 <use figs/emissionmap.png>
 Package pdftex.def Info: figs/emissionmap.png  used on input line 16.
-(pdftex.def)             Requested size: 513.11743pt x 513.14609pt.
-<figs/slices.png, id=166, 647.0574pt x 626.8218pt>
+(pdftex.def)             Requested size: 513.11743pt x 500.87177pt.
+<figs/slices.png, id=207, 655.0071pt x 611.886pt>
 File: figs/slices.png Graphic file (type png)
 <use figs/slices.png>
 Package pdftex.def Info: figs/slices.png  used on input line 23.
-(pdftex.def)             Requested size: 513.11743pt x 497.10625pt.
-<figs/apertmap.png, id=167, 328.5876pt x 311.7246pt>
+(pdftex.def)             Requested size: 513.11743pt x 479.33253pt.
+<figs/apertmap.png, id=208, 336.0555pt x 278.2395pt>
 File: figs/apertmap.png Graphic file (type png)
 <use figs/apertmap.png>
 Package pdftex.def Info: figs/apertmap.png  used on input line 30.
-(pdftex.def)             Requested size: 256.55872pt x 243.4058pt.
-<figs/specmap.png, id=168, 911.5656pt x 337.5009pt>
+(pdftex.def)             Requested size: 256.55872pt x 212.4322pt.
+<figs/specmap.png, id=209, 951.0732pt x 915.1791pt>
 File: figs/specmap.png Graphic file (type png)
 <use figs/specmap.png>
-Package pdftex.def Info: figs/specmap.png  used on input line 34.
-(pdftex.def)             Requested size: 513.11603pt x 230.89833pt.
+Package pdftex.def Info: figs/specmap.png  used on input line 31.
+(pdftex.def)             Requested size: 256.55872pt x 246.86426pt.
 
-Overfull \hbox (58.33853pt too wide) in paragraph at lines 40--51
+Overfull \hbox (58.33853pt too wide) in paragraph at lines 37--48
 []$[]$
  []
 
-) (./sections/results_sections/outflowmodel.tex [4] [5 <./figs/contour.png> <./figs/spectral.png>] [6 <./figs/emissionmap.png>]
+) (./sections/results_sections/outflowmodel.tex [6 <./figs/raito_contour.png> <./figs/H_alpha_ly_alpha_ratio.png>] [7 <./figs/emissionmap.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 18.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 13.
 
-[7 <./figs/slices.png>]
+[8 <./figs/slices.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 18.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 13.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[8 <./figs/apertmap.png> <./figs/specmap.png>])) (./sections/Discussion.tex (./sections/discussion_sections/outflowmechanism.tex
-<figs/cp_AGN_vs_cp_SF.png, id=223, 522.5121pt x 492.1587pt>
+)) (./sections/Discussion.tex (./sections/discussion_sections/outflowmechanism.tex
+<figs/cp_AGN_vs_cp_SF.png, id=242, 520.8258pt x 492.8814pt>
 File: figs/cp_AGN_vs_cp_SF.png Graphic file (type png)
 <use figs/cp_AGN_vs_cp_SF.png>
 Package pdftex.def Info: figs/cp_AGN_vs_cp_SF.png  used on input line 6.
-(pdftex.def)             Requested size: 256.55872pt x 241.65552pt.
-<figs/cp_AGN_vs_L_AGN.png, id=224, 516.2487pt x 488.3043pt>
+(pdftex.def)             Requested size: 256.55872pt x 242.79253pt.
+<figs/cp_AGN_vs_L_AGN.png, id=243, 508.7808pt x 488.5452pt>
 File: figs/cp_AGN_vs_L_AGN.png Graphic file (type png)
 <use figs/cp_AGN_vs_L_AGN.png>
 Package pdftex.def Info: figs/cp_AGN_vs_L_AGN.png  used on input line 7.
-(pdftex.def)             Requested size: 256.55872pt x 242.68372pt.
+(pdftex.def)             Requested size: 256.55872pt x 246.36673pt.
 
 
-Package caption Warning: \label without proper reference on input line 13.
+Package caption Warning: \label without proper reference on input line 12.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `coupeffic' on page 9 undefined on input line 14.
 
 
-Package caption Warning: \label without proper reference on input line 13.
+Package caption Warning: \label without proper reference on input line 12.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `coupeffic' on page 9 undefined on input line 14.
 
 
-Package caption Warning: \label without proper reference on input line 13.
+Package caption Warning: \label without proper reference on input line 12.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `coupeffic' on page 9 undefined on input line 14.
 
-
-Underfull \hbox (badness 2165) in paragraph at lines 16--17
-[]\T1/ptm/m/n/10 Besides, if we in-stead con-sider a momentum-driven
+[9 <./figs/apertmap.png> <./figs/specmap.png>]
+Overfull \hbox (4.30585pt too wide) in paragraph at lines 22--23
+[]\T1/ptm/m/n/10 In sum-mary, based on above anal-y-ses we find MAMMOTH-
  []
 
-
-Underfull \hbox (badness 1184) in paragraph at lines 20--21
-\T1/ptm/m/n/10 two fac-tors are con-sis-tent with the large-scale en-vi-ron-
- []
-
-) (./sections/discussion_sections/galaxymerger.tex [9]
-<figs/P_outSF_vs_L_AGN.png, id=261, 516.9714pt x 482.7636pt>
+[10 <./figs/cp_AGN_vs_cp_SF.png> <./figs/cp_AGN_vs_L_AGN.png>]) (./sections/discussion_sections/galaxymerger.tex
+<figs/P_outSF_vs_L_AGN.png, id=296, 523.2348pt x 486.1362pt>
 File: figs/P_outSF_vs_L_AGN.png Graphic file (type png)
 <use figs/P_outSF_vs_L_AGN.png>
-Package pdftex.def Info: figs/P_outSF_vs_L_AGN.png  used on input line 11.
-(pdftex.def)             Requested size: 256.55872pt x 239.57643pt.
-<figs/P_outAGN_vs_L_AGN.png, id=262, 510.4671pt x 486.3771pt>
+Package pdftex.def Info: figs/P_outSF_vs_L_AGN.png  used on input line 10.
+(pdftex.def)             Requested size: 256.55872pt x 238.37201pt.
+<figs/P_outAGN_vs_L_AGN.png, id=297, 510.4671pt x 486.3771pt>
 File: figs/P_outAGN_vs_L_AGN.png Graphic file (type png)
 <use figs/P_outAGN_vs_L_AGN.png>
-Package pdftex.def Info: figs/P_outAGN_vs_L_AGN.png  used on input line 12.
+Package pdftex.def Info: figs/P_outAGN_vs_L_AGN.png  used on input line 11.
 (pdftex.def)             Requested size: 256.55872pt x 244.46445pt.
-)) (./sections/Conclusions.tex) (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.bbl [10 <./figs/cp_AGN_vs_cp_SF.png> <./figs/cp_AGN_vs_L_AGN.png>] [11 <./figs/P_outSF_vs_L_AGN.png> <./figs/P_outAGN_vs_L_AGN.png>]) [12]
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+) (./sections/discussion_sections/emission_mechanism.tex)) (./sections/Conclusions.tex
+Underfull \hbox (badness 2653) in paragraph at lines 8--9
+[]\T1/ptm/m/n/10 (2) The ve-loc-ity gra-di-ents re-vealed from the three-
+ []
+
+) (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.bbl [11] [12 <./figs/P_outSF_vs_L_AGN.png> <./figs/P_outAGN_vs_L_AGN.png>]) [13]
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (/Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.aux)
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 110.
 
 
 LaTeX Warning: There were undefined references.
@@ -786,18 +1012,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11746 strings out of 492649
- 168056 string characters out of 6129623
- 324888 words of memory out of 5000000
- 15310 multiletter control sequences out of 15000+600000
- 52032 words of font info for 88 fonts, out of 8000000 for 9000
+ 20081 strings out of 492649
+ 342756 string characters out of 6129623
+ 815179 words of memory out of 5000000
+ 23605 multiletter control sequences out of 15000+600000
+ 577117 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,51p,2587b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.pdf (12 pages, 3170231 bytes).
+ 44i,10n,51p,10384b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/shiwuzhang/WS/ASTRO/MAMMOTH_KCWI/draft_code/paper/ApJtemplate/.texpadtmp/template.pdf (13 pages, 4062969 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,22 +1,21 @@
 \documentclass[../Results.tex]{subfiles}
 
 \begin{document}
-	The mass rate, energy rate and momentum rate being carried by outflow are important to help us understand the physical mechanisms to drive it. Although outflow are likely to be entraining gas in multiphases, the cool and warm gas observed here could represent a large fraction of the overall mass and energy of the total outflows. Bscause of the complication of modeling outflows, here we adopt simple outflow models to provide first order constraints. We calculate the upper and lower limit of the outflow energy rate with 2 different ways and the fiducial value we use is their mean in log space(follow the method given by \cite{harrison2014kiloparsec}
-	The upper limit is given by \cite{rodriguez2013importance} , we use eq. 7 in his paper to calculate the mass outflow rate:
+	The mass rate, energy rate and momentum rate being carried by outflow are important to help us understand the physical mechanisms driving the outflow. Although outflow are likely to be entraining gas in multiphases, the cool and warm gas observed here could represent a large fraction of the overall mass and energy of the total outflows. Because of the complication of modeling outflows, here we adopt simple outflow models to provide first order constraints. Following the same process of \citet{harrison2014kiloparsec}, the outflow energy rate is estimated with two methods which give the upper limit and low limit respectively. We calculate the mean value of these limits in logarithmic space and use it as the fiducial value. The low limit is given by Eq.7 in \citet{rodriguez2013importance}:
 	\begin{equation}
-		 \dot{M}=\frac{3 L m_{p} v_{o u t}}{\alpha_{Ly \alpha}^{e f f} h \nu_{Ly \alpha} n_{e} r}
+		 \rm \dot{M}=\frac{3 L m_{p} v_{o u t}}{\alpha_{Ly \alpha}^{e f f} h \nu_{Ly \alpha} n_{e} r}
 	\end{equation}
-	where L is the luminosity of lyman$\alpha$ emission, $m_{p}$ is the proton mass, $v_{o u t}$ is outflow velocity, $alpha_{Ly^{e f f}}$ is recombination coefficients, we get this value from \cite{storey1995recombination} , $h\nu_{Ly}$ is the energy of lyman$\alpha$ photons, $n_{e}$ is electron density, $r$ is the distance we see the outflow from the central AGN, in our case we adopt 30kpc. In addition, the kinetic power of the outflow ($\dot{E}$) is related to the velocity dispersion, mass outflow rate and outflow velocity by:
+	where L is the luminosity of Ly$\rm \alpha$ emission, $\rm m_{p}$ is the proton mass, $\rm v_{o u t}$ is outflow velocity, $\rm \alpha_{Ly\alpha}^{eff}$ is recombination coefficients which is obtained from \cite{storey1995recombination}, $\rm h\nu_{Ly\alpha}$ is the energy of Ly$\rm \alpha$ photons, $\rm n_{e}$ is electron density and r is the radius of the outflow to its host, we adopt $\rm r=30 \ kpc$ for our case. The kinetic power of the outflow $\rm \dot{E}$ relating to the velocity dispersion, mass outflow rate and outflow velocity is also given by \citet{rodriguez2013importance}:
 	\begin{equation}
-		 \dot{\mathrm{E}}=\frac{\dot{M}}{2}\left(V_{o u t}^{2}+3 \sigma^{2}\right)
+		\rm  \dot{\mathrm{E}}=\frac{\dot{M}}{2}\left(V_{o u t}^{2}+3 \sigma^{2}\right)
 	\end{equation}
-	the main uncertainty in calculating the mass outflow rates is electron density, this value is often measured from the emission-line ratio SII $\lambda6716/\lambda6731$, this doublet is not covered by our IFU observations, hence, we adopt the value in \cite{cai2017discovery} $n_{e}=1.25 cm^{-3}$. With this approch, we obtain $\dot{M}_{out,low} \approx 500\mathrm{M} \odot \mathrm{yr}^{-1}$. Moreover with the velocity dispersion we estimated, the energy outflow rate is $\dot{E}_{out,low} \approx 10^{44} erg/s$.
+	the main uncertainty in calculating the mass outflow rates is electron density which is often measured from the emission-line ratio SII $\rm \lambda6716/\lambda6731$. Because this doublet is not covered by our IFU observations, we adopt the value $\rm n_{e}=1.25 \ cm^{-3}$ from \citet{cai2017discovery}. With the above equations and values, we obtain $\rm \dot{M}_{out,low} \approx 500 \ M_{\odot} \ yr^{-1}$. With the velocity dispersion $\rm \sigma_{v}=600 \ km/s$, we derive the energy outflow rate to be $\rm \dot{E}_{out,low} \approx 10^{44} \ erg/s$.
 	
-	We also consider the mass energy injection rates assuming an energy conserving bubble in a uniform medium \cite{heckman1990nature} which gives the relation:
+	To estimate the upper limit, we calculate the mass energy injection rates by assuming an energy conserving bubble in a uniform medium \citep{heckman1990nature} which gives the relation:
 	\begin{equation}
-		\dot{E}_{o u t, u p} \approx 1.5 \times 10^{46} r_{10}^{2}v_{1000}^{3} n_{0.5} \ erg/s
+		\rm \dot{E}_{o u t, u p} \approx 1.5 \times 10^{46} r_{10}^{2}v_{1000}^{3} n_{0.5} \ erg/s
 	\end{equation}
-	where $r_{10}$ is the radius in unit of 10kpc, $v_{1000}$ in unit of 1000km/s and $n_{0.5}$ is in unit of $0.5 cm^{-3}$. Using this method we obtain values of $\dot{E_{out,up}} \approx 9 \times 10^{46} erg/s$. The mass outflow rates are then given by $\dot{M}_{out,up}=2 \dot{E}_{out,up}/c^{2}$ where $c$ is the speed of light, this gives $\dot{M}_{out,up} \approx 8.7 \times 10^{5}M_{\odot}/yr$. So the fiducial value we use is $\dot{E}_{out,mean}=3 \times 10^{45} erg/s$.
+	where $r_{10}$ is the radius in unit of 10 kpc, $v_{1000}$ in unit of 1000 km/s and $n_{0.5}$ is in unit of $\rm 0.5 \ cm^{-3}$. Using this method we obtain $\rm \dot{E_{out,up}} \approx 9 \times 10^{46} \ erg/s$. The mass outflow rate is then given by $\rm \dot{M}_{out,up}=2 \dot{E}_{out,up}/c^{2}$ where $\rm c$ is the speed of light, this gives $\rm \dot{M}_{out,up} \approx 8.7 \times 10^{5} \ M_{\odot} \ yr^{-1}$. So the fiducial value is $\rm \dot{E}_{out,mean}=3 \times 10^{45} \ erg/s$.
 	
-	Finally, in preparation for the follow discussion, we estimate outflow momentum rate by taking the mass outflow rate calculated above and assuming $\dot{P}_{out}=\dot{M}_{out}v_{out}$
+	In preparation for the follow discussion, we also estimate outflow momentum rate by taking the mass outflow rate calculated above and assuming $\rm \dot{P}_{out}=\dot{M}_{out}v_{out}$.
 \end{document}
