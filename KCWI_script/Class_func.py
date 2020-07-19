@@ -26,6 +26,8 @@ from astropy import units as u
 from astropy.convolution import convolve,Gaussian2DKernel
 from spectral_cube import SpectralCube
 from scipy import ndimage
+from lmfit.models import LinearModel
+
 
 class Cube(SpectralCube):
 
@@ -50,9 +52,17 @@ class Cube(SpectralCube):
         calculate the continuum image with
         this cube
         '''
-        self.continuum=self.mean(axis=0)
+        x=self.spectral_axis.to(u.AA).value
+        cube_conti_para=np.zeros((2,self._data.shape[1],self._data.shape[2]))
+        for i in range(cube_conti_para.shape[1]):
+            for j in range(cube_conti_para.shape[2]):
+                lmodel=LinearModel()
+                para=lmodel.guess(data=self._data[:,i,j],x=x)
+                result=lmodel.fit(data=self._data[:,i,j],x=x,params=para,method='bfgsb')
+                cube_conti_para[:,i,j]=[result.best_values['slope'],result.best_values['intercept']]
 
-        return None
+
+        return cube_conti_para
 
     def mask_generate(self,noise,step=2):
         '''
@@ -109,10 +119,11 @@ class Cube(SpectralCube):
         a 1D array with the same length with noise cube
         '''
 
-        noise=np.zeros(self.hdu.data.shape[0])
+        noise=np.ones(self.hdu.data.shape[0])
         for i in range(self.hdu.data.shape[0]):
             std=np.std(self.hdu.data[i])
             noise[i]=std
+
         return noise
 
     @classmethod#类方法
@@ -154,8 +165,9 @@ class Cube(SpectralCube):
         if self.optimal_img is not None:
             mask=np.sum(maskcube,axis=0)
             # SNR should propotional to sqrt(k)
-            snrmap=(self.optimal_img-0.7*noise)*np.sqrt(mask)/noise
-            # snrmap = (self.optimal_img - 0.7 * noise) / (noise * np.sqrt(mask))
+            # snrmap=(self.optimal_img-0.7*noise)*np.sqrt(mask)/noise
+            mask[mask==0]=1e6
+            snrmap = (self.optimal_img - 0.7 * noise) / (noise * np.sqrt(mask))
         else:
             print("There's no optimal-extracted image for cube!")
         return snrmap
@@ -202,7 +214,7 @@ class Map:
 
         return datacube
 
-    def optimalmap(self,smooth=False):
+    def optimalmap(self):
         '''
         generate the best extracted psudo-nb image
         '''
@@ -210,18 +222,24 @@ class Map:
         #产生必须的3种cube
         emissioncube,noisecube,continuumcube=self._basecube_generate()
         #continuumcube调用方法算continuum image并把它赋值给continuumcube.continuum(详见estimate_continuum方法)
-        continuumcube.estimate_continuum()
+        conticube_para=continuumcube.estimate_continuum()
+        conticube_emission=self.continuum_cube(emissioncube.spectral_axis.to(u.AA).value,conticube_para)
+        conticube_noise=self.continuum_cube(noisecube.spectral_axis.to(u.AA).value,conticube_para)
         #emission cube中的每一个slice都减去continuum image并对去除continuum的emission cube做smooth
-        emissioncube._data=emissioncube._data-continuumcube.continuum.value
-        # emissioncube._data=self._smooth_cube(emissioncube._data,1,1,1,3)
+        emissioncube._data=emissioncube._data-conticube_emission
+        noisecube._data=noisecube._data-conticube_noise
+
+        #smooth the cube
+        kernel=self.kernel()
+        emissioncube._data=self.smooth(kernel,emissioncube._data)
+        noisecube._data = self.smooth(kernel, noisecube._data)
+        emissioncube._data = ndimage.median_filter(emissioncube._data, size=[3, 1, 1])
+        # print('noise=%f' % np.median(noisecube.noise()))
 
         #利用noise cube产生mask cube并计算 optimal cube
-        maskcube = emissioncube.mask_generate(self.noiselevel * noisecube.noise().mean())
-        optimalcube=emissioncube.max_emission_extraction(maskcube)
+        maskcube = emissioncube.mask_generate(self.noiselevel * np.median(noisecube.noise()))
+        optimalcube=emissioncube.max_emission_extraction(maskcube,False)
         optimalcube.optimal_img=optimalcube.optimal_img+noisecube.noise().mean()*0.7
-
-        if smooth:
-            optimalcube.optimal_img = self.smooth(optimalcube.optimal_img, 5, 5, 3, 7)
 
         return optimalcube,noisecube,maskcube,emissioncube
 
@@ -243,6 +261,7 @@ class Map:
         optimalcube=optimalcube.with_spectral_unit(u.km/u.s,
                                                    velocity_convention='relativistic',
                                                    rest_value=(1+redshift)*restvalue)
+        optimalcube._data=ndimage.median_filter(optimalcube._data,size=[3,1,1])
         momentmap=optimalcube.moment(order=order,axis=0)
 
         momentmap=np.power(momentmap,1/order)
@@ -263,13 +282,56 @@ class Map:
         抠出包含emission的部分，将bool map中对应区域改成True，利用bool map
         就可以实现保留我们想要的 emission和部分sky
         '''
-        p_map = np.random.rand(snrmap.shape[0],snrmap.shape[1])
-        bool_map = p_map > p
-
-        bool_map[boundary[0]:boundary[1],boundary[2]:boundary[3]] = True
-        snrmap[~bool_map] = 0
-
+        # p_map = np.random.rand(snrmap.shape[0],snrmap.shape[1])
+        # bool_map = p_map > p
+        #
+        # bool_map[boundary[0]:boundary[1],boundary[2]:boundary[3]] = True
+        mask=np.zeros_like(snrmap)
+        # snrmap[~bool_map] = 0
+        mask[boundary[0]:boundary[1],boundary[2]:boundary[3]]=1
+        snrmap=snrmap*mask
         return snrmap
+
+    def continuum_cube(self,x,cube_para):
+
+        conticube=np.zeros((x.shape[0],cube_para.shape[1],cube_para.shape[2]))
+        for i in range(conticube.shape[1]):
+            for j in range(conticube.shape[2]):
+                conticube[:,i,j]=cube_para[0,i,j]*x+cube_para[1,i,j]
+
+        return conticube
+
+    def smooth(self,kernel,cube):
+        '''
+        smooth cube for each slice
+        '''
+        for i in range(cube.shape[0]):
+            cube[i,:,:]=convolve(cube[i,:,:],kernel)
+
+        return cube
+
+    def kernel(self,center=0.3,s1=0.1,s2=0.05,s3=0.025):
+
+        kernel=np.zeros((5,5))
+        kernel[2,2]=center
+
+        kernel[1, 2] = s1
+        kernel[3, 2] = s1
+        kernel[2, 1] = s1
+        kernel[2, 3] = s1
+
+        kernel[1, 1] = s2
+        kernel[3, 3] = s2
+        kernel[1, 3] = s2
+        kernel[3, 1] = s2
+
+        kernel[0,2] = s3
+        kernel[2, 0] = s3
+        kernel[2, 4] = s3
+        kernel[4, 2] = s3
+
+
+        return kernel
 
 def Img_interpsmooth(img,x,y,n_inter):
     '''
